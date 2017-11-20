@@ -39,7 +39,6 @@ export default class App extends Component<{}> {
         var promise= new Promise(function(resolve,reject) {
           tx.executeSql('SELECT * FROM Thong where Name = ? AND  Age = ?', ['Thong',12], (tx, results) => {
             var len = results.rows.length;
-            var len = result.rows.length;
             for (let i = 0; i < len; i++) {
               let row = results.rows.item(i);
               console.log(`Employee name: ${row.Name}, Dept Name: ${row.Age}`);
