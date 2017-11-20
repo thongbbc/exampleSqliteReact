@@ -43,6 +43,7 @@ export default class App extends Component<{}> {
                 var len = results.rows.length;
                   var len = results.rows.length;
                     var len = results.rows.length;
+            var len2 = results.rows.length;
             for (let i = 0; i < len; i++) {
               let row = results.rows.item(i);
               console.log(`Employee name: ${row.Name}, Dept Name: ${row.Age}`);
